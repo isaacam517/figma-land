@@ -1,24 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import HeaderLight from './components/HeaderLigth';
+import FeaturesLigth from './components/FeaturesLigth';
+import HeroLight from './components/HeroLigth';
+import LigthCTA from './components/LigthCTA';
+import PartnersLigth from './components/PartnerLigth';
+import PrincingLigth from './components/PricingLight';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+     <HeaderLight />
+     <FeaturesLigth />
+     <HeroLight />
+     <LigthCTA />
+     <PartnersLigth />
+     <PrincingLigth />
     </div>
   );
 }
