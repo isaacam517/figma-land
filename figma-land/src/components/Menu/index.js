@@ -4,8 +4,8 @@ import {Link} from 'react-scroll';
 import { MenuContainer, NavContainer, Button, NavMenu, DivList} from './styles';
 
 const Menu = () => {
-    const [openMenu, setOpenMenu] = useState(true);
-
+    const [openMenu, setOpenMenu] = useState(false);
+    //função para mudar o estado no menu
     const handleOpen = () => {
         setOpenMenu(!openMenu)
         console.log(openMenu);
