@@ -8,7 +8,11 @@ export const CTAContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center; 
+    text-align: center;
+    color: #FFFFFF;
+    @media screen and (max-width:460px){
+        margin-top: -1px;      
+    } 
 `
 export const InputEmail = styled.input`
     width: 353px;
@@ -17,9 +21,11 @@ export const InputEmail = styled.input`
     border: 1px solid #E8E8E8;
     box-sizing: border-box;
     border-radius: 39px;
-    padding-left:20px;          
+    padding-left:20px;
+    @media screen and (max-width:460px){
+        width:76vw;      
+    }          
 `
-
 export const Button = styled.button`
     cursor: pointer;      
     width: 353px;
@@ -34,5 +40,32 @@ export const Button = styled.button`
     font-size: 16px;
     line-height: 16px;
     letter-spacing: 0.2px;
-    color: #FFFFFF;           
+    color: #FFFFFF;
+    @media screen and (max-width:460px){
+        width:76vw;      
+    }           
+`
+export const H2Mobile = styled.h2`
+    font-size:0.1px;
+    @media screen and (max-width:460px){
+        width:296px;    
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 46px;
+        line-height: 57px;   
+        letter-spacing: 0.2px;        
+    }    
+`
+export const H2Desktop = styled.h2`
+    width:296px;    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 46px;
+    line-height: 57px;   
+    letter-spacing: 0.2px;
+    @media screen and (max-width:460px){
+        display: none;      
+    }    
 `
