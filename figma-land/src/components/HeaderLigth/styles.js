@@ -4,7 +4,6 @@ import banner from './img/banner.png';
 import bannermob from './img/bannermob.png'; 
 import fundo1 from './img/rectangle9.png'; 
 import fundo2 from './img/rectangle8.png'; 
-import iconnav from './img/iconnav.png'; 
 
 export const HeaderContainer = styled.div`
     width: 100vw;
@@ -24,17 +23,6 @@ export const HeaderContainer = styled.div`
 export const SpanImg = styled.span`
        
 `
-export const NavMenu = styled.span` 
-    
-    @media screen and (max-width:460px){
-        position: absolute;
-        background-image: url(${iconnav});
-        width: 26px;
-        height: 16px;
-        margin-top: 8%;
-        margin-left: 80%;
-    }
-`
 export const SpanNav = styled.span`
     width: 880px;     
     a{
@@ -48,7 +36,8 @@ export const SpanNav = styled.span`
         line-height: 27px;
         text-align: center;
         letter-spacing: 0.2px;
-        margin-right:4%;            
+        margin-right:1.5%;
+        cursor: pointer;            
     }
     @media screen and (max-width:460px){
             display: none;
@@ -111,10 +100,11 @@ export const ImgBanner = styled.div`
     } 
 `
 export const DivBanner = styled.div`
-    margin-top: 100px;
+    margin-top: -60px;
     display: flex;
     position: absolute;
-    @media screen and (max-width:460px){ 
+    @media screen and (max-width:460px){
+        margin-top: 150px; 
         width: 90vw;      
         text-align: center;
         flex-direction: column-reverse;
@@ -122,12 +112,17 @@ export const DivBanner = styled.div`
 
 `    
 export const DivText = styled.div`
-    margin-top: 100px;     
+    margin-top: 50px;     
     flex-direction: column;
     @media screen and (max-width:460px){        
         align-items: center;
         text-align: center;
-        margin-left: 14%;      
+        h1, h4{
+            margin-left: 3.5vw;
+        }
+        button {
+            margin-left: -35%;
+        }     
     }  
 
 `    
