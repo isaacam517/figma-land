@@ -11,15 +11,33 @@ import TestimonialsLigth from './components/TestimonialsLight';
 
 function App() {
   return (
-    <div>      
-      <HeaderLight />
-      <FeaturesLigth />
+    <div>
+      <div id="home">
+        <HeaderLight />        
+      </div> 
+           
+      <div id="product">
+        <FeaturesLigth />
+      </div>
+      
       <HeroLight />
-      <LigthCTA />
-      <PartnersLigth />
+            
+      <LigthCTA />      
+
+      <div id="partners">
+        <PartnersLigth />
+      </div>
+
       <TestimonialsLigth />
-      <PrincingLigth />
-      <ContactLigth />
+      
+
+      <div id="princing">
+        <PrincingLigth />
+      </div>
+      
+      <div id="contato">
+        <ContactLigth />
+      </div>
       <FooterLigth />     
     </div>
   );
